@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Components</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center text-success">Alerts</h2>
+      <div class="alert alert-primary">
+        A simple primary alert—check it out!
+      </div>
+      <div class="alert alert-success">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-danger">
+        A simple <a href="#" class="alert-link">Danger</a> alert—check it out!
+      </div>
+      <div class="alert alert-info alert-dismissible fade show">
+        <strong>Important</strong> A simple info alert—check it out!
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+      <!-- accordion start -->
+      <div class="accordion" id="aex1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headerOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cOne" aria-expanded="true" aria-controls="cOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="cOne" class="accordion-collapse collapse show" aria-labelledby="headerOne" data-bs-parent="#aex1">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cTwo" aria-expanded="false" aria-controls="cTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="cTwo" class="accordion-collapse collapse" aria-labelledby="headTwo" data-bs-parent="#aex1">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cThree" aria-expanded="false" aria-controls="cThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="cThree" class="accordion-collapse collapse" aria-labelledby="headThree" data-bs-parent="#aex1">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- accordion end -->
+      <h2 class="text-center text-success">Flush</h2>
+      <!-- accordition secend start -->
+      <div class="accordion accordion-flush" id="aFlush">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="fOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Flush Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="fOne" data-bs-parent="#aFlush">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="fTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Flush Item #2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="fTwo" data-bs-parent="#aFlush">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="fThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Flush Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="fThree" data-bs-parent="#aFlush">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+      <!-- accordition secend end -->
+      <h2 class="text-center text-success">Badges</h2>
+      <h1>Example heading <span class="badge bg-primary">Primary</span></h1>
+      <h1>Example heading <span class="badge bg-success">Success</span></h1>
+      <h1>Example heading <span class="badge bg-info">Info</span></h1>
+      <button type="button" class="btn bg-info position-relative">
+        inbox
+        <span class="position-absolute top-0 start-100 translate-middle rounded-pill badge bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+      <!-- badge end -->
+      <h2 class="text-center text-success">Breadcrumb</h2>
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <h2 class="text-center text-success">Button</h2>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <h2 class="text-center text-success">Toolber</h2>
+      <div class="btn-toolber">
+        <div class="btn-group me-2">
+          <div class="btn btn-primary" type="button">1</div>
+          <div class="btn btn-primary" type="button">2</div>
+          <div class="btn btn-primary" type="button">3</div>
+          <div class="btn btn-primary" type="button">4</div>
+          <div class="btn btn-primary" type="button">5</div>
+        </div>
+        <div class="btn-group me-2">
+          <div class="btn btn-info" type="button">1</div>
+          <div class="btn btn-info" type="button">2</div>
+          <div class="btn btn-info" type="button">3</div>
+          <div class="btn btn-info" type="button">4</div>
+        </div>
+        <div class="btn-group me-2">
+          <div class="btn btn-danger" type="button">1</div>
+          <div class="btn btn-danger" type="button">2</div>
+          <div class="btn btn-danger" type="button">3</div>
+        </div>
+        <div class="input-group w-25 mt-5">
+          <div class="input-group-text" id="btnGroup">@</div>
+          <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroup">
+        </div>
+      </div>
+      <div class="btn-group-vertical me-2 mt-2">
+        <div class="btn btn-success" type="button">1</div>
+        <div class="btn btn-outline-primary" type="button">2</div>
+        <div class="btn btn-danger" type="button">3</div>
+      </div>
+      <!-- button end -->
+      <h2 class="text-center text-success mt-5">Cards</h2>
+      <div class="c_card mt-5">
+        <div class="row ">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/blog4.jpg" class="card-img-top"alt="blog">
+              <div class="card-body">
+                <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga beatae consequuntur sit ullam non est eveniet quam corrupti blanditiis. Sed nostrum itaque doloribus nisi architecto.</p>
+                <button class="btn btn-primary float-start" type="button">Click me</button>
+                <button class="btn btn-primary float-end" type="button">Click me</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/blog5.jpg" class="card-img-top"alt="blog">
+              <div class="card-body">
+                <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga beatae consequuntur sit ullam non est eveniet quam corrupti blanditiis. Sed nostrum itaque doloribus nisi architecto.</p>
+                <button class="btn btn-primary float-start" type="button">Click me</button>
+                <button class="btn btn-primary float-end" type="button">Click me</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/blog6.jpg" class="card-img-top"alt="blog">
+              <div class="card-body">
+                <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga beatae consequuntur sit ullam non est eveniet quam corrupti blanditiis. Sed nostrum itaque doloribus nisi architecto.</p>
+                <button class="btn btn-primary" type="button">Click me</button>
+                <button class="btn btn-info" type="button">Click me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <h2 class="text-center text-success mt-5">Close button</h2>
+      <button type="button" class="btn-close bg-dark p-4"></button>
+      <button type="button" class="btn-close bg-primary p-4"></button>
+      <!-- close button end -->
+      <h2 class="text-center text-success mt-5">Collapse</h2>
+
+      <p>
+        <a class="btn btn-danger" data-bs-toggle="collapse" href="#mcOne" role="button" aria-expanded="false" aria-controls="mcOne">Collapse One</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mcTwo" aria-expanded="false" aria-controls="mcTwo">Collapse Two</button>
+        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="mcOne mcTwo">Collapse Both</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="mcOne">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="mcTwo">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-center text-success mt-5">Dropdown</h2>
+      <div class="btn-group">
+        <button class="btn btn-primary dropdown-toggle me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Priamry</button>
+        <ul class="dropdown-menu bg-primary">
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+        </ul>
+        <!--  -->
+        <button class="btn btn-secondary me-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Secondary </button>
+        <ul class="dropdown-menu bg-secondary">
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+        </ul>
+        <!--  -->
+        <!--  -->
+        <button class="btn btn-warning me-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Warning </button>
+        <ul class="dropdown-menu bg-warning">
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+        </ul>
+        <!--  -->
+        <button class="btn btn-danger me-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Danger </button>
+        <ul class="dropdown-menu bg-danger">
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+        </ul>
+        <!--  -->
+        <button class="btn btn-info me-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Info </button>
+        <ul class="dropdown-menu bg-info">
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+        </ul>
+        <!--  -->
+        <button class="btn btn-success me-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >Success </button>
+        <ul class="dropdown-menu bg-success">
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+          <li><a href="#" class="dropdown-item">Action</a></li>
+        </ul>
+      </div>
+      <!--  -->
+      <h2 class="text-center text-success mt-5">List Group</h2>
+      <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+          The current button
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">A second item</button>
+        <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+        <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+        <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+      </div>
+
+    </div>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
